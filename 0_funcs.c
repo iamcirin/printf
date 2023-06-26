@@ -32,8 +32,12 @@ int char_func(va_list list_args, char char_string[],
 int string_func(va_list list_args, char char_string[],
 	int t, int w, int p, int s)
 {
+
 	int len = 0, i;
 	char *str = va_arg(list_args, char *);
+
+	(void)(s);
+	(void)(char_string);
 
 	if (str == NULL)
 	{

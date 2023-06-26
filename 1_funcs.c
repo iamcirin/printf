@@ -70,8 +70,10 @@ int oct_func(va_list list_args, char string_char[],
 	}
 
 	if (t & 8 && init_number != 0)
+	{
 		string_char[i] = '0';
 		i--;
+	}
 
 	i++;
 
